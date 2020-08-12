@@ -5,28 +5,51 @@
 @media ( max-width: 992px )
   .container
     max-width: 700px
+  .navbar
+    &-menu
+      &__item
+        margin-right: 25px
+      &__button
+        max-height: 40px
+        padding: 9px 24px
 
 @media ( max-width: 767px )
   body
     padding-top: 78px
   .container
-    max-width: 700px
-    width: 92%
+    max-width: 650px
+    width: 85%
+  .header
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    z-index: 99
   .navbar
-    &--mobile
-      &--fixed
-        position: fixed
-        left: 0
-        top: 0
-        right: 0
-        z-index: 99
     &-menu
+      position: absolute
+      top: 10px
+      right: 8px
+      padding: 36px 24px
+      min-width: 304px
+      background-color: $light
       flex-direction: column
-      &__item
+      align-items: flex-start
+      display: none
+      &__link
         margin-bottom: 20px
-        &--mobile
-          &--visible
-            display: block
+      &__button
+        min-width: 130px
+        width: 100%
+      &__close
+        position: absolute
+        top: 16px
+        right: 20px
+        width: 16px
+        height: 16px
+        display: block
+      &--visible
+        display: flex
   .menu
     &-button
       display: flex
@@ -37,29 +60,44 @@
       justify-content: space-between
       flex-direction: column
       border: none
-      background-color: #ffffff
+      background-color: inherit
       cursor: pointer
       &__line
         width: 22px
         height: 2px
         background-color: #3A4C66
+  .hero
+    padding-top: 30px
+    &-container
+      padding: 36px 28px
+      max-width: 728px
+      max-height: 624px
+      width: 95%
+    &__title
+      max-width: 407px
+      font-size: 48px
+      line-height: 60px
+    &__description
+      max-width: 400px
+      font-size: 18px
+      line-height: 32px
 
-@media ( max-width: 700px )
+//@media ( max-width: 700px )
 
-@media ( max-width: 576px )
+//@media ( max-width: 576px )
 
-@media ( max-width: 525px )
+//@media ( max-width: 525px )
 
-@media ( max-width: 425px )
+//@media ( max-width: 425px )
 
-@media ( max-width: 350px )
+//@media ( max-width: 350px )
 
 
-@media ( max-height: 520px )
+//@media ( max-height: 520px )
 
-@media ( max-height: 440px )
+//@media ( max-height: 440px )
 
-@media ( max-height: 360px )
+//@media ( max-height: 360px )
 
 
 
