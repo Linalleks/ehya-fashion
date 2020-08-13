@@ -14,4 +14,32 @@ $(document).ready(function () {
       $(".navbar-menu").removeClass("navbar-menu--visible");
     }
   }
+
+  var testimonialSlider = new Swiper(".testimonial-slider", {
+    // Optional parameters
+    loop: true,
+    autoHeight: true,
+
+    autoplay: {
+      delay: 7000,
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      type: "bullets",
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
+
+  $(".testimonial-slider").mouseenter(function (e) {
+    testimonialSlider.autoplay.stop();
+  });
+  $(".testimonial-slider").mouseleave(function (e) {
+    testimonialSlider.autoplay.start();
+  });
 });
