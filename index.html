@@ -144,7 +144,7 @@
               alt="Photo: Minimalist Style"
               class="photo card__photo"
             />
-            <h4 class="title card__title">Minimalist Style</h4>
+            <h3 class="title card__title">Minimalist Style</h3>
             <div class="price">
               <span class="price-tag">$25.7</span>
               <img
@@ -325,6 +325,99 @@
       <!-- /.container -->
     </section>
     <!-- /.testimonial -->
+
+    <section class="stories">
+      <div class="container stories-container">
+        <div class="stories__left">
+          <span class="label stories__label">Stories</span>
+          <h2 class="title stories__title">
+            This is Fashun Story
+          </h2>
+          <p class="description stories__description">
+            Check our story about fashion for reference and your style. Written
+            by our designer and specialist.
+          </p>
+          <div class="stories-buttons">
+            <button class="stories__button stories__button--prev">
+              <img src="img/button-prev.svg" alt="Button: Prev" />
+            </button>
+            <button class="stories__button stories__button--next">
+              <img src="img/button-next.svg" alt="Button: Next" />
+            </button>
+          </div>
+        </div>
+        <!-- /.stories-left -->
+        <div class="swiper-container stories-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="stories-slider__item">
+                <div class="stories-card">
+                  <img
+                    src="img/stories-1.jpg"
+                    alt="Photo: Mix & Match Style"
+                    class="photo stories-card__photo"
+                  />
+                  <div class="stories-card__info">
+                    <h3 class="stories-card__title">
+                      Mix & Match Style 01: Casual Style x Formal Style Look
+                    </h3>
+                    <a href="#" class="stories-card__link">Read More</a>
+                  </div>
+                </div>
+                <!-- /.stories-card -->
+                <div class="stories-card">
+                  <img
+                    src="img/stories-2.jpg"
+                    alt="Photo: Tips & Trick"
+                    class="photo stories-card__photo"
+                  />
+                  <div class="stories-card__info">
+                    <h3 class="stories-card__title">
+                      Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YK
+                    </h3>
+                    <a href="#" class="stories-card__link">Read More</a>
+                  </div>
+                </div>
+                <!-- /.stories-card -->
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.stories-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.stories -->
+
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <div class="newsletter-text">
+          <h2 class="title newsletter__title">Join Our Newsletter</h2>
+          <p class="newsletter__description">
+            Just insert your email into the field below. And you will get the
+            updates about fashion & styles from us.
+          </p>
+        </div>
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
+          <input
+            type="email"
+            class="subscribe__input"
+            placeholder="Your Email"
+            name="email"
+            required
+          />
+          <button class="button subscribe__button">Subscribe</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </section>
+    <!-- /.newsletter -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
