@@ -33,11 +33,25 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
-
   $(".testimonial-slider").mouseenter(function (e) {
     testimonialSlider.autoplay.stop();
   });
   $(".testimonial-slider").mouseleave(function (e) {
     testimonialSlider.autoplay.start();
+  });
+
+  var storiesSlider = new Swiper(".stories-slider", {
+    // Optional parameters
+    loop: true,
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
+    navigation: {
+      nextEl: ".stories__button--next",
+      prevEl: ".stories__button--prev",
+    },
   });
 });
