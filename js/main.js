@@ -40,10 +40,18 @@ $(document).ready(function () {
     testimonialSlider.autoplay.start();
   });
 
-  var storiesSlider = new Swiper(".stories-slider", {
-    // Optional parameters
-    loop: true,
+  var tabsItem = $(".tabs__item");
+  var contentItem = $(".trending-content__item");
 
+  tabsItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabsItem.removeClass("tabs__item--active");
+    $(this).addClass("tabs__item--active");
+    contentItem.removeClass("trending-content__item--active");
+    $(activeContent).addClass("trending-content__item--active");
+  });
+
+  var storiesSlider = new Swiper(".stories-slider", {
     keyboard: {
       enabled: true,
       onlyInViewport: false,

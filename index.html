@@ -131,147 +131,427 @@
         <div class="trending-top">
           <h2 class="title trending__title">Trending Items</h2>
           <ul class="tabs">
-            <li class="tabs__item tabs__item--bold">New Arrival</li>
-            <li class="tabs__item">Best Sellers</li>
-            <li class="tabs__item">Upcoming</li>
+            <li data-target="#new" class="tabs__item tabs__item--active">
+              New Arrival
+            </li>
+            <li data-target="#best" class="tabs__item">Best Sellers</li>
+            <li data-target="#upcoming" class="tabs__item">Upcoming</li>
           </ul>
         </div>
         <!-- /.trending-top -->
-        <div class="trending-items">
-          <div class="card">
-            <img
-              src="img/trend-1.jpg"
-              alt="Photo: Minimalist Style"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Minimalist Style</h3>
-            <div class="price">
-              <span class="price-tag">$25.7</span>
+        <ul class="trending-content">
+          <li
+            id="new"
+            class="trending-content__item trending-content__item--active"
+          >
+            <div class="card">
               <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
+                src="img/trend-1.jpg"
+                alt="Photo: Minimalist Style"
+                class="photo card__photo"
               />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <img
-              src="img/trend-2.jpg"
-              alt="Photo: Luxury Gown"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Luxury Gown</h3>
-            <div class="price">
-              <span class="price-tag">$30.6</span>
-              <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
-              />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <img
-              src="img/trend-3.jpg"
-              alt="Photo: Full Coloristy"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Full Coloristy</h3>
-            <div class="price">
-              <span class="price-tag">$25.7</span>
-              <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
-              />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <img
-              src="img/trend-4.jpg"
-              alt="Photo: Pinky Winky"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Pinky Winky</h3>
-            <div class="price">
-              <span class="price-tag">$109</span>
-              <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
-              />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <img
-              src="img/trend-5.jpg"
-              alt="Photo: Holiday Vibes"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Holiday Vibes</h3>
-            <div class="price">
-              <span class="price-tag">$51.2</span>
-              <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
-              />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <img
-              src="img/trend-6.jpg"
-              alt="Photo: Swaggie Shaggy"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Swaggie Shaggy</h3>
-            <div class="price">
-              <span class="price-tag">$81.3</span>
-              <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
-              />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <img
-              src="img/trend-7.jpg"
-              alt="Photo: Red Formal"
-              class="photo card__photo"
-            />
-            <h3 class="title card__title">Red Formal</h3>
-            <div class="price">
-              <span class="price-tag">$66.8</span>
-              <img
-                class="price-icon"
-                src="img/icon-shopping-cart.svg"
-                alt="Icon: Shopping cart"
-              />
-            </div>
-          </div>
-          <!-- /.card -->
-          <div class="card">
-            <div class="card-more">
-              <a href="#" class="card-more__link">
+              <h3 class="title card__title">Minimalist Style</h3>
+              <div class="price">
+                <span class="price-tag">$25.7</span>
                 <img
-                  src="img/plus.svg"
-                  alt="Icon: Plus"
-                  class="card-more__icon"
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
                 />
-                <h3 class="title card-more__title">See More Collection</h3>
-              </a>
+              </div>
             </div>
-          </div>
-          <!-- /.card -->
-        </div>
-        <!-- /.trending-items -->
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-2.jpg"
+                alt="Photo: Luxury Gown"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Luxury Gown</h3>
+              <div class="price">
+                <span class="price-tag">$30.6</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-3.jpg"
+                alt="Photo: Full Coloristy"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Full Coloristy</h3>
+              <div class="price">
+                <span class="price-tag">$25.7</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-4.jpg"
+                alt="Photo: Pinky Winky"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Pinky Winky</h3>
+              <div class="price">
+                <span class="price-tag">$109</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-5.jpg"
+                alt="Photo: Holiday Vibes"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Holiday Vibes</h3>
+              <div class="price">
+                <span class="price-tag">$51.2</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-6.jpg"
+                alt="Photo: Swaggie Shaggy"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Swaggie Shaggy</h3>
+              <div class="price">
+                <span class="price-tag">$81.3</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-7.jpg"
+                alt="Photo: Red Formal"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Red Formal</h3>
+              <div class="price">
+                <span class="price-tag">$66.8</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="card-more">
+                <a href="#" class="card-more__link">
+                  <img
+                    src="img/plus.svg"
+                    alt="Icon: Plus"
+                    class="card-more__icon"
+                  />
+                  <h3 class="title card-more__title">See More Collection</h3>
+                </a>
+              </div>
+            </div>
+            <!-- /.card -->
+          </li>
+          <!-- /.trending-content__item -->
+
+          <li id="best" class="trending-content__item">
+            <div class="card">
+              <img
+                src="img/trend-8.jpg"
+                alt="Photo: Natural Style"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Natural Style</h3>
+              <div class="price">
+                <span class="price-tag">$25.7</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-9.jpg"
+                alt="Photo: Comfortable Street"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Comfortable Street</h3>
+              <div class="price">
+                <span class="price-tag">$30.6</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-10.jpg"
+                alt="Photo: Shopping Style"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Shopping Style</h3>
+              <div class="price">
+                <span class="price-tag">$25.7</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-11.jpg"
+                alt="Photo: Little Girl"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Little Girl</h3>
+              <div class="price">
+                <span class="price-tag">$109</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-12.jpg"
+                alt="Photo: Holiday Style"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Holiday style</h3>
+              <div class="price">
+                <span class="price-tag">$51.2</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-13.jpg"
+                alt="Photo: Casual"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Casual</h3>
+              <div class="price">
+                <span class="price-tag">$81.3</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-14.jpg"
+                alt="Photo: Sport Live"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Sport Live</h3>
+              <div class="price">
+                <span class="price-tag">$66.8</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="card-more">
+                <a href="#" class="card-more__link">
+                  <img
+                    src="img/plus.svg"
+                    alt="Icon: Plus"
+                    class="card-more__icon"
+                  />
+                  <h3 class="title card-more__title">See More Collection</h3>
+                </a>
+              </div>
+            </div>
+            <!-- /.card -->
+          </li>
+          <!-- /.trending-content__item -->
+
+          <li id="upcoming" class="trending-content__item">
+            <div class="card">
+              <img
+                src="img/trend-15.jpg"
+                alt="Photo: Summers"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Summers</h3>
+              <div class="price">
+                <span class="price-tag">$25.7</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-16.jpg"
+                alt="Photo: Doll Style"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Doll Style</h3>
+              <div class="price">
+                <span class="price-tag">$30.6</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-17.jpg"
+                alt="Photo: Barbie Girl"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Barbie Girl</h3>
+              <div class="price">
+                <span class="price-tag">$25.7</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-18.jpg"
+                alt="Photo: Natural Free"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Natural Free</h3>
+              <div class="price">
+                <span class="price-tag">$109</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-19.jpg"
+                alt="Photo: Mysterious"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Mysterious</h3>
+              <div class="price">
+                <span class="price-tag">$51.2</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-20.jpg"
+                alt="Photo: Travel Free"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Travel Free</h3>
+              <div class="price">
+                <span class="price-tag">$81.3</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <img
+                src="img/trend-21.jpg"
+                alt="Photo: Neformal"
+                class="photo card__photo"
+              />
+              <h3 class="title card__title">Neformal</h3>
+              <div class="price">
+                <span class="price-tag">$66.8</span>
+                <img
+                  class="price-icon"
+                  src="img/icon-shopping-cart.svg"
+                  alt="Icon: Shopping cart"
+                />
+              </div>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="card-more">
+                <a href="#" class="card-more__link">
+                  <img
+                    src="img/plus.svg"
+                    alt="Icon: Plus"
+                    class="card-more__icon"
+                  />
+                  <h3 class="title card-more__title">See More Collection</h3>
+                </a>
+              </div>
+            </div>
+            <!-- /.card -->
+          </li>
+          <!-- /.trending-content__item -->
+        </ul>
+        <!-- /.trending-content -->
       </div>
     </section>
     <!-- /.trending -->
@@ -312,6 +592,23 @@
                 </p>
                 <h3 class="title testimonial-slider__name">
                   Julia Robert - Designer
+                </h3>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-slider__item">
+                <p class="testimonial-slider__text">
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quod adipisci animi in molestias magnam earum tempora
+                  quibusdam reiciendis nisi eveniet minima quasi sed aliquam
+                  consequatur accusantium molestiae voluptatum repellendus nam
+                  consequuntur numquam odio eius voluptatibus, autem error!
+                  Voluptatum, alias."
+                </p>
+                <h3 class="title testimonial-slider__name">
+                  Sam Dagner - Fashion Model
                 </h3>
               </div>
             </div>
@@ -374,6 +671,74 @@
                   <div class="stories-card__info">
                     <h3 class="stories-card__title">
                       Tips & Trick : Buy a Thrifft Clothes on Sunday Market, YK
+                    </h3>
+                    <a href="#" class="stories-card__link">Read More</a>
+                  </div>
+                </div>
+                <!-- /.stories-card -->
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="stories-slider__item">
+                <div class="stories-card">
+                  <img
+                    src="img/stories-3.jpg"
+                    alt="Photo: Oh My Gosh"
+                    class="photo stories-card__photo"
+                  />
+                  <div class="stories-card__info">
+                    <h3 class="stories-card__title">
+                      Oh My Gosh! I have a dear friend-Nalini.
+                    </h3>
+                    <a href="#" class="stories-card__link">Read More</a>
+                  </div>
+                </div>
+                <!-- /.stories-card -->
+                <div class="stories-card">
+                  <img
+                    src="img/stories-4.jpg"
+                    alt="Photo: Fashion Queen"
+                    class="photo stories-card__photo"
+                  />
+                  <div class="stories-card__info">
+                    <h3 class="stories-card__title">
+                      Fashion Queen: How we get attracted to stranggers.
+                    </h3>
+                    <a href="#" class="stories-card__link">Read More</a>
+                  </div>
+                </div>
+                <!-- /.stories-card -->
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="stories-slider__item">
+                <div class="stories-card">
+                  <img
+                    src="img/stories-5.jpg"
+                    alt="Photo: The Trendsetter"
+                    class="photo stories-card__photo"
+                  />
+                  <div class="stories-card__info">
+                    <h3 class="stories-card__title">
+                      The Trendsetter: She differed, here come had coin.
+                    </h3>
+                    <a href="#" class="stories-card__link">Read More</a>
+                  </div>
+                </div>
+                <!-- /.stories-card -->
+                <div class="stories-card">
+                  <img
+                    src="img/stories-6.jpg"
+                    alt="Photo: Guide To Celebrit"
+                    class="photo stories-card__photo"
+                  />
+                  <div class="stories-card__info">
+                    <h3 class="stories-card__title">
+                      Guide To Celebrit. You could flip any shampoo.
                     </h3>
                     <a href="#" class="stories-card__link">Read More</a>
                   </div>
