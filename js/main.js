@@ -54,4 +54,15 @@ $(document).ready(function () {
       prevEl: ".stories__button--prev",
     },
   });
+
+  // Обработка форм
+  $(".subscribe").validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Email address must be in the format of name@domain.com",
+      },
+    },
+  });
 });
