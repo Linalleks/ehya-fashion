@@ -1,0 +1,118 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding-top: 108px
+  padding-bottom: 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-gap: 20px
+    grid-auto-rows: minmax(40px,min-content)
+    align-items: start
+  &__logo
+    width: 166px
+    grid-row: 1 / 3
+    align-self: center
+  &__categories
+    grid-row: 1 / 4
+  &__legal
+    justify-self: end
+  &__social
+    &-links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+    &-network
+      display: flex
+      align-items: center
+      grid-row: 2 / 4
+      grid-column: span 2
+  &__contact
+    &-details
+      grid-column: span 2
+    &-form
+      grid-column: span 2
+  &__bottom
+    padding-top: 82px
+    padding-left: 140px
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    grid-column: 2 / 5
+    &-links
+      display: flex
+      justify-content: space-between
+      min-width: 283px
+    &-link
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    color: $light
+    margin: 0 0 16px 0
+    text-transform: uppercase
+    &--inline
+      margin: 0 43px 0 0
+    &--mb-3
+      margin-bottom: 30px
+  &__item
+    display: flex
+    align-items: flex-start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+    &--mb-2
+      margin-bottom: 20px
+  &__icon
+    &-wrapper
+      min-width: 40px
+  &__text
+    color: $footer-text-color
+    margin-bottom: 22px
+  &__link
+    text-decoration: none
+    color: inherit
+  &__input
+    width: 100%
+    &-wrapper
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+      width: 100%
+    &-group
+      flex-basis: 48%
+      margin-bottom: 15px
+  &__message
+    flex-basis: 100%
+    margin-bottom: 23px
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+.payment
+  width: 136px
+  height: 22px
+.phone-number,
+.email
+  text-decoration: none
+  white-space: nowrap
+  color: inherit
+.work-time
+  white-space: nowrap
+

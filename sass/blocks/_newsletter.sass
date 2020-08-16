@@ -14,24 +14,25 @@
     background-size: cover
     background-image: url(../img/newsletter-ovals.svg)
     background-repeat: no-repeat
-  &-wrapper
+  &-container
     display: flex
     align-items: center
-    justify-content: space-between
-    max-width: 1080px
-    margin: auto
-  &__title
+    justify-content: flex-start
+  &__text
+    margin-right: 144px
+    max-width: 486px
     color: $light
+  &__title
+    margin-bottom: 14px
   &__description
+    margin: 0
     font-style: normal
     font-weight: normal
     font-size: 18px
     line-height: 32px
-    max-width: 486px
-    color: $light
 .subscribe
   position: relative
-  width: 447px
+  min-width: 447px
   &:after
     content: ''
     position: absolute
@@ -42,7 +43,6 @@
     background-image: url(../img/icon-email.svg)
     background-repeat: no-repeat
   &__input
-    position: absolute
     width: 100%
     height: 56px
     padding-left: 48px

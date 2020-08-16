@@ -42,42 +42,45 @@
 
     <section class="hero">
       <div class="hero-container">
-        <span class="label hero__label"># Ready to be cool</span>
-        <h1 class="title hero__title">
-          Cause Everyone Deserve to be Cool & Fashionable
-        </h1>
-        <p class="description hero__description">
-          How you can be a Cool People or Fashionista Society. To solve this you
-          should wear a great clothes and updated your style. You can search
-          here. Explore Now!
-        </p>
-        <button class="button hero__button">Take Exploration</button>
-        <ul class="advantages">
-          <li class="advantages__item">
-            <img
-              src="img/icon-get-money.svg"
-              alt="Icon: Get money"
-              class="advantages__icon"
-            />
-            <span class="advantages__text">COD Payment</span>
-          </li>
-          <li class="advantages__item">
-            <img
-              src="img/icon-protection.svg"
-              alt="Icon: Get money"
-              class="advantages__icon"
-            />
-            <span class="advantages__text">Guarantee</span>
-          </li>
-          <li class="advantages__item">
-            <img
-              src="img/icon-like.svg"
-              alt="Icon: Get money"
-              class="advantages__icon"
-            />
-            <span class="advantages__text">Quality</span>
-          </li>
-        </ul>
+        <div class="hero-wrapper">
+          <span class="label hero__label"># Ready to be cool</span>
+          <h1 class="title hero__title">
+            Cause Everyone Deserve to be Cool & Fashionable
+          </h1>
+          <p class="description hero__description">
+            How you can be a Cool People or Fashionista Society. To solve this
+            you should wear a great clothes and updated your style. You can
+            search here. Explore Now!
+          </p>
+          <button class="button hero__button">Take Exploration</button>
+          <ul class="advantages">
+            <li class="advantages__item">
+              <img
+                src="img/icon-get-money.svg"
+                alt="Icon: Get money"
+                class="advantages__icon"
+              />
+              <span class="advantages__text">COD Payment</span>
+            </li>
+            <li class="advantages__item">
+              <img
+                src="img/icon-protection.svg"
+                alt="Icon: Get money"
+                class="advantages__icon"
+              />
+              <span class="advantages__text">Guarantee</span>
+            </li>
+            <li class="advantages__item">
+              <img
+                src="img/icon-like.svg"
+                alt="Icon: Get money"
+                class="advantages__icon"
+              />
+              <span class="advantages__text">Quality</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.hero-wrapper -->
       </div>
       <!-- /.hero-container -->
     </section>
@@ -127,7 +130,7 @@
     <!-- /.collection -->
 
     <section class="trending">
-      <div class="container">
+      <div class="container trending-container">
         <div class="trending-top">
           <h2 class="title trending__title">Trending Items</h2>
           <ul class="tabs">
@@ -757,8 +760,8 @@
     <!-- /.stories -->
 
     <section class="newsletter">
-      <div class="newsletter-wrapper">
-        <div class="newsletter-text">
+      <div class="container newsletter-container">
+        <div class="newsletter__text">
           <h2 class="title newsletter__title">Join Our Newsletter</h2>
           <p class="newsletter__description">
             Just insert your email into the field below. And you will get the
@@ -785,7 +788,7 @@
     <!-- /.newsletter -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-top">
           <div class="footer__main">
             <a href="#" class="logo">
@@ -834,84 +837,87 @@
             </div>
             <!-- /.footer__social-links -->
           </div>
-          <div class="footer__list">
-            <h3 class="footer__title">Product</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Landingpage</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Features</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Documentation</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Referral Program</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Pricing</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.footer__list -->
+          <div class="footer-group">
+            <div class="footer__list">
+              <h3 class="footer__title">Product</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Landingpage</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Features</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Documentation</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Referral Program</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
 
-          <div class="footer__list">
-            <h3 class="footer__title">Services</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Documentation</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Design</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Themes</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Illustrations</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">UI Kit</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.footer__list -->
+            <div class="footer__list">
+              <h3 class="footer__title">Services</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Documentation</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Design</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Themes</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Illustrations</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">UI Kit</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
 
-          <div class="footer__list">
-            <h3 class="footer__title">Company</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">About</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Privacy Policy</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Careers</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.footer__list -->
+            <div class="footer__list">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
 
-          <div class="footer__list">
-            <h3 class="footer__title">More</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Documentation</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">License</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Changelog</a>
-              </li>
-            </ul>
+            <div class="footer__list">
+              <h3 class="footer__title">More</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Documentation</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">License</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Changelog</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
           </div>
-          <!-- /.footer__list -->
+          <!-- /.footer-group -->
         </div>
         <!-- /.footer-top -->
         <div class="footer-bottom">
