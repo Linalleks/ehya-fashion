@@ -42,7 +42,7 @@ $mail->Body = $body;
 // Проверяем отправленность сообщения
 if ($mail->send()) {
     $result = "success";
-    header('location: thankyou.php');
+    header('location: thank.html');
 }
 else {$result = "error";}
 

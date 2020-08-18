@@ -25,10 +25,17 @@
     width: 132px
     padding-bottom: 26px
   &__button
+    background-image: url(../img/button-next.svg)
     background-color: transparent
+    background-repeat: no-repeat
+    background-size: contain
     border: none
     cursor: pointer
     padding: 0
+    width: 56px
+    height: 56px
+    &--prev
+      transform: scale(-1, 1)
   &-slider
     width: 662px
     height: 485px
@@ -75,7 +82,10 @@
       font-weight: 600
       font-size: 16px
       line-height: 22px
-
+.swiper
+  &-button
+    &-disabled
+      opacity: 0.5
 
 
 

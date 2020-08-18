@@ -9,6 +9,7 @@
     padding-top: 80px
     &-container
       min-width: 670px
+      width: min-content
     &__info
       max-width: 100%
       padding-top: 40px
@@ -80,6 +81,8 @@
       min-width: 728px
       width: 95%
   .collection
+    &-container
+      width: min-content
     &__info
       max-width: 654px
   .trending
@@ -100,8 +103,6 @@
     padding: 30px 0 80px
     &-slider
       max-width: 630px
-      &__item
-        min-height: 270px
   .stories
     &__left
       max-width: 510px
@@ -111,10 +112,13 @@
       background-position: -250px -30px
     &-container
       flex-direction: column
+      align-items: center
     &__text
       margin-right: 0
       margin-bottom: 56px
       text-align: center
+    &__subscribe
+      margin-top: 0
   .footer
     padding: 64px 0
     &-container
@@ -133,7 +137,7 @@
       min-width: 253px
       margin-right: 50px
 
-@media ( max-width: 767px )
+@media ( max-width: 768px )
   body
     padding-top: 75px
   .container
@@ -219,15 +223,19 @@
     &__main-photo
       margin-right: 0
   .testimonial
+    &__icon
+      margin-bottom: 12px
     &-slider
       max-width: 630px
       width: 90%
       &__item
-        margin-bottom: 48px
+        margin-bottom: 36px
       &__text
-        margin-bottom: 48px
+        margin-bottom: 36px
   .stories
     &-container
+      padding-top: 80px
+      padding-bottom: 80px
       max-width: 728px
       width: 95%
     &-slider
@@ -380,8 +388,9 @@
       font-size: 14px
       line-height: 24px
       padding-right: 12px
-    &-icon
+    &__button
       width: 14px
+      height: 12px
   .trending
     &-top
       padding-bottom: 36px
@@ -448,11 +457,9 @@
     line-height: 28px
   .navbar
     &-menu
-      position: absolute
-      top: 10px
-      right: 8px
       padding: 36px 24px
-      width: 97%
+      left: 8px
+      min-width: unset
   .hero
     padding-top: 24px
     &-container
@@ -461,16 +468,31 @@
       padding-bottom: 20px
       background-position: 77% top
       border-radius: 0
+      position: relative
+      &:after
+        position: absolute
+        bottom: 20%
+        right: 0
+        left: 0
+        width: 100%
+        height: 50%
+        background-color: transparent
+        background: linear-gradient(to top, rgba(#E8EAE9, 0.9) 0%, rgba(#E8EAE9, 0.1) 100%)
+        content: ''
     &-wrapper
       align-items: center
+    &__label
+      z-index: 1
     &__title
       margin-top: 20px
       font-size: 32px
       line-height: 40px
       text-align: center
+      z-index: 1
     &__description
       margin-top: 20px
       text-align: center
+      z-index: 1
     &__button
       margin-top: 24px
       margin-bottom: 22px
@@ -478,22 +500,27 @@
       min-height: 48px
       font-size: 16px
       line-height: 22px
+      z-index: 1
   .advantages
     display: flex
     align-items: center
     justify-content: center
     flex-wrap: wrap
     width: 93%
+    z-index: 1
     &__item
       margin-bottom: 16px
-      &:nth-child(1)
-        margin-right: 16px
+      margin-right: 8px
+      margin-left: 8px
     &__icon
       min-width: 24px
       min-height: 24px
       padding: 4px
       border-radius: 8px
   .collection
+    padding-top: 64px
+    &-container
+      width: 85%
     &__main-photo
       width: 100%
       min-width: 290px
@@ -512,8 +539,7 @@
       height: 100%
     &__info
       width: 100%
-      min-width: 290px
-      max-width: 330px
+      min-width: 280px
       padding-top: 36px
     &__description
       margin-top: 16px
@@ -563,6 +589,10 @@
   .stories
     &-container
       padding-bottom: 40px
+    &__label
+      padding: 2px 12px
+    &-buttons
+      padding-bottom: 26px
   .newsletter
     padding: 64px 0
     &-container
@@ -623,7 +653,14 @@
       margin-bottom: 15px
 //@media ( max-width: 525px )
 
-//@media ( max-width: 425px )
+@media ( max-width: 425px )
+  .hero
+    &-container
+      background-position: 80% top
+  .collection
+    &-container
+      width: 91%
+
 
 @media ( max-width: 350px )
   .hero
@@ -634,6 +671,24 @@
       &__item
         &--active
           justify-content: space-between
+  .advantages
+    width: 100%
+  .collection
+    &__description
+      width: 280px
+  .stories
+    &__description
+      max-width: 280px
+  .footer
+    &__title
+      font-size: 16px
+      line-height: 22px
+    &__text
+      max-width: 263px
+    &__link
+      font-size: 14px
+      line-height: 20px
+
 
 
 //@media ( max-height: 520px )

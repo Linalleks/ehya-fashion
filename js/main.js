@@ -18,6 +18,7 @@ $(document).ready(function () {
   var testimonialSlider = new Swiper(".testimonial-slider", {
     // Optional parameters
     loop: true,
+    autoHeight: true,
 
     autoplay: {
       delay: 7000,
@@ -26,13 +27,17 @@ $(document).ready(function () {
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
+      clickable: true,
     },
 
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
+
+    spaceBetween: 30,
   });
+
   $(".testimonial-slider").mouseenter(function (e) {
     testimonialSlider.autoplay.stop();
   });
